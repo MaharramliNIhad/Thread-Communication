@@ -32,18 +32,18 @@ notifyAll();
                 e.printStackTrace();
             }
         });
-        Thread consumer = new Thread(() -> {
-            try {
-                while (true) {
-                    queue.consumer();
-                    Thread.sleep(1000);
-                }
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-        });
+//        Thread consumer = ( -> {
+//            try {
+//                while (true) {
+//                    queue.consumer();
+//                    Thread.sleep(1000);
+//                }
+//            } catch (InterruptedException e) {
+//                throw new RuntimeException(e);
+//            }
+//        };
     producer.start();
-    consumer.start();
+    //consumer.start();
 
     }
 }

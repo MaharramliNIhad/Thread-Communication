@@ -7,7 +7,10 @@ public class SemaphoreExample {
 
 
 public static void main(String[] args) {
-
+    System.out.println(0.1*2==0.2);
+    System.out.println(0.1*3==0.3);
+int a=Integer.MAX_VALUE;
+    System.out.println(a);
 Thread thread=new Thread(() ->{
     int id=0;
     try {
